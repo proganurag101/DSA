@@ -13,11 +13,11 @@ class Solution
      max=secmax=INT_MIN;
    
     for(int i{};i<arr_size;i++){
-        if(arr[i]>max){
-            secmax = max;
-            max=arr[i];
-        }else if(arr[i]>secmax && arr[i]<max){
-            secmax = arr[i];
+        if(arr[i]>max){        //condition for max value
+            secmax = max;     //the secmax is assigned the current value of max which is going to be re-assigned below.
+            max=arr[i];       //now max has the largest value and sec max has second largest value
+        }else if(arr[i]>secmax && arr[i]<max){   
+            secmax = arr[i];    //this will include those values which are bigger than secmax hence they were not assigned before in the max value condition.
         }
             
         }
