@@ -26,7 +26,7 @@ class Solution
     
   
     
-    if(arr[0]==arr[1]==arr[2]){
+    if(arr[0]==arr[1]==arr[2]){   //this we put to exclude those condition in which all the values in the array are equal and hence they will have no 2nd largest value.
         secmax = -1;
     }
     	
